@@ -41,6 +41,9 @@ public class TC001_LoginTest extends TestBaseClass{
 		lpo.logout_drp_down_btn();
 		lpo.logout_btn();
 		
+		System.out.println("For github sample1 ");
+		System.out.println("For github sample2 ");
+		
 		}
 		
 		catch(Exception e)
