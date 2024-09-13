@@ -47,8 +47,7 @@ public class TC001_LoginTest extends TestBaseClass{
 		System.out.println("For github sample3 ");
 		System.out.println("For github sample4 ");
 		
-		System.out.println("For github sample5 ");
-		System.out.println("For github sample6 ");
+		
 		
 		}
 		
