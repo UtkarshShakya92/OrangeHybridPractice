@@ -16,5 +16,7 @@ public class TC_003_DropdownTest {
 		System.out.println("this is dropdowntest 2");
 		System.out.println("this is dropdowntest 3");
 		System.out.println("this is dropdowntest 4");
+		System.out.println("this is dropdowntest 5");
+		System.out.println("this is dropdowntest 6");
 	}
 }
