@@ -9,8 +9,10 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class TestBaseClass {
 
@@ -18,8 +20,9 @@ public class TestBaseClass {
 	public Logger logger;
 	public Properties p;
 
+	@Parameters("Browser")
 	@BeforeClass
-	public void setup() throws IOException {
+	public void setup(String browsername) throws IOException {
 		
 		logger = LogManager.getLogger(this.getClass());
 		
@@ -27,12 +30,17 @@ public class TestBaseClass {
 		p = new Properties();
 		p.load(file);
 
-		String p_exeEnv = p.getProperty("execution_env");
+		//String p_exeEnv = p.getProperty("execution_env");
 
 		String url = p.getProperty("appurl");
 
-		if (p_exeEnv.contains("local")) {
+		if (browsername.equalsIgnoreCase("Charome")) {
 			driver = new ChromeDriver();
+		}
+		
+		else if(browsername.equalsIgnoreCase("Edge"))
+		{
+			driver = new EdgeDriver();
 		}
 
 		driver.manage().deleteAllCookies();

@@ -29,6 +29,7 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>logintestng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<parameters>${Browser}</parameters>
 					</configuration>
 				</plugin>
 

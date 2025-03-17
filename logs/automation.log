@@ -48,3 +48,13 @@
 			*****Dashboard section*****
 2025-03-17 19:49:33 INFO  TC001_LoginTest:39 -
 			*****logout section *****
+2025-03-17 23:12:30 INFO  TC001_LoginTest:21 -
+			*****Starting TC001 Login Test*****
+2025-03-17 23:12:31 INFO  TC001_LoginTest:26 -
+			*****for login username is passed*****
+2025-03-17 23:12:31 INFO  TC001_LoginTest:28 -
+			***** password is passed*****
+2025-03-17 23:12:33 INFO  TC001_LoginTest:33 -
+			*****Dashboard section*****
+2025-03-17 23:12:33 INFO  TC001_LoginTest:39 -
+			*****logout section *****
