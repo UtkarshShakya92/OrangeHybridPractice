@@ -34,7 +34,7 @@ public class TestBaseClass {
 
 		String url = p.getProperty("appurl");
 
-		if (browsername.equalsIgnoreCase("Charome")) {
+		if (browsername.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 		}
 		
